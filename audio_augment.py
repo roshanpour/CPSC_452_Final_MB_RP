@@ -19,8 +19,6 @@ def augment_audio(y, sr):
         y += np.random.normal(0, 0.005, y.shape)
     if np.random.rand() < 0.5:
         y *= np.random.uniform(0.8, 1.2)
-    if np.random.rand() < 0.5:
-        y = np.roll(y, np.random.randint(sr // 10))
     return y
 
 # loop through the original data and make a directory that includes the augmented files
