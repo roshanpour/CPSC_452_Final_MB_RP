@@ -4,7 +4,6 @@ The first thing to focus on is importing the data. We imported the data from Kag
 import kagglehub
 path = kagglehub.dataset_download("andradaolteanu/gtzan-dataset-music-genre-classification")
  This command stores the data at location: path. Note that the following code might have to be modified to accommodate the user's given path. We then moved the data to the present working directory using the command: mv path/* .
- If this does not work, we have also provided the data file in the GitHub repository.
 
 The remainder of the code is run simply by going through the python notebook sequentially. 
 
